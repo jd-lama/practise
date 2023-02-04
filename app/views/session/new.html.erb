@@ -1,0 +1,8 @@
+<h1>Sign in</h1>
+
+<%= form_with url:sign_in_path do |form| %>
+<%= form.text_field :email %>
+<%= form.password_field :password %>
+<%= link_to "Forgot password", password_reset_path %>
+<%= form.submit %>
+<% end %> 
